@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="NexusFlow — AI Automation Agency specializing in Operational Efficiency. Replace manual workflows with AI Agents for Sales, HR, and Customer Support."/>
+  <meta name="keywords" content="AI automation, operational efficiency, AI agents, workflow automation, sales automation, HR automation, customer support AI"/>
+  <meta property="og:title" content="NexusFlow — AI Automation Agency"/>
+  <meta property="og:description" content="We replace manual workflows with AI Agents. Sales, HR, Customer Support — automated."/>
+  <meta property="og:type" content="website"/>
+  <title>NexusFlow — AI Automation Agency</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%2300ff88'/%3E%3Cpath d='M10 16 L16 10 L22 16 L16 22 Z' fill='%23080d14'/%3E%3C/svg%3E"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="src/styles/main.css"/>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">
+      <span class="logo-mark"></span>
+      NexusFlow
+    </a>
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#how">How It Works</a></li>
+      <li><a href="#sectors">Sectors</a></li>
+      <li><a href="#results">Results</a></li>
+      <li><a href="#contact" class="nav-cta">Get Audit →</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <ul>
+    <li><a href="#services" class="mob-link">Services</a></li>
+    <li><a href="#how" class="mob-link">How It Works</a></li>
+    <li><a href="#sectors" class="mob-link">Sectors</a></li>
+    <li><a href="#results" class="mob-link">Results</a></li>
+    <li><a href="#contact" class="mob-link">Get Free Audit</a></li>
+  </ul>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero-bg">
+    <canvas id="flowCanvas"></canvas>
+  </div>
+  <div class="hero-content">
+    <div class="hero-badge">
+      <span class="badge-dot"></span>
+      AI Automation Agency
+    </div>
+    <h1 class="hero-title">
+      Your Team's<br/>
+      <span class="title-accent">Manual Hours</span><br/>
+      Are Costing You.
+    </h1>
+    <p class="hero-sub">We identify where your team is grinding through repetitive workflows and replace them with intelligent AI Agents — so your people focus on work that actually matters.</p>
+    <div class="hero-actions">
+      <a href="#contact" class="btn-primary">Get Free Workflow Audit</a>
+      <a href="#how" class="btn-ghost">See How It Works ↓</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat">
+        <span class="stat-num" data-target="73">0</span><span class="stat-unit">%</span>
+        <span class="stat-label">Avg. Hours Saved</span>
+      </div>
+      <div class="stat-div"></div>
+      <div class="stat">
+        <span class="stat-num" data-target="12">0</span><span class="stat-unit">x</span>
+        <span class="stat-label">ROI Within 90 Days</span>
+      </div>
+      <div class="stat-div"></div>
+      <div class="stat">
+        <span class="stat-num" data-target="48">0</span><span class="stat-unit">h</span>
+        <span class="stat-label">Avg. Deployment Time</span>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll-hint">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker-wrap">
+  <div class="ticker">
+    <span>Sales Pipeline Automation</span>
+    <span class="ticker-dot">◆</span>
+    <span>HR Onboarding Agents</span>
+    <span class="ticker-dot">◆</span>
+    <span>Customer Support AI</span>
+    <span class="ticker-dot">◆</span>
+    <span>Lead Qualification Bots</span>
+    <span class="ticker-dot">◆</span>
+    <span>Invoice Processing</span>
+    <span class="ticker-dot">◆</span>
+    <span>Email Triage Systems</span>
+    <span class="ticker-dot">◆</span>
+    <span>Scheduling Automation</span>
+    <span class="ticker-dot">◆</span>
+    <span>Data Entry Elimination</span>
+    <span class="ticker-dot">◆</span>
+    <span>Sales Pipeline Automation</span>
+    <span class="ticker-dot">◆</span>
+    <span>HR Onboarding Agents</span>
+    <span class="ticker-dot">◆</span>
+    <span>Customer Support AI</span>
+    <span class="ticker-dot">◆</span>
+    <span>Lead Qualification Bots</span>
+    <span class="ticker-dot">◆</span>
+    <span>Invoice Processing</span>
+    <span class="ticker-dot">◆</span>
+    <span>Email Triage Systems</span>
+    <span class="ticker-dot">◆</span>
+    <span>Scheduling Automation</span>
+    <span class="ticker-dot">◆</span>
+    <span>Data Entry Elimination</span>
+    <span class="ticker-dot">◆</span>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section class="services section" id="services">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">// What We Build</span>
+      <h2>AI Agents That <span class="accent">Replace</span> the Grind</h2>
+      <p>Every agent is custom-built for your workflows — not a generic template.</p>
+    </div>
+    <div class="services-grid">
+
+      <div class="service-card" data-index="01">
+        <div class="card-icon">
+          <svg viewBox="0 0 40 40" fill="none"><path d="M8 20 L20 8 L32 20 L20 32 Z" stroke="currentColor" stroke-width="2"/><circle cx="20" cy="20" r="4" fill="currentColor"/></svg>
+        </div>
+        <h3>Sales Automation</h3>
+        <p>AI agents that qualify leads, follow up on cold prospects, update your CRM, and schedule demos — without human input.</p>
+        <ul class="card-features">
+          <li>Lead scoring & qualification</li>
+          <li>Personalized outreach sequences</li>
+          <li>CRM data hygiene & updates</li>
+          <li>Demo scheduling automation</li>
+        </ul>
+        <div class="card-metric">
+          <span class="metric-val">4.2h</span>
+          <span class="metric-label">saved per rep / day</span>
+        </div>
+      </div>
+
+      <div class="service-card featured" data-index="02">
+        <div class="card-badge">Most Popular</div>
+        <div class="card-icon">
+          <svg viewBox="0 0 40 40" fill="none"><rect x="8" y="8" width="10" height="10" stroke="currentColor" stroke-width="2"/><rect x="22" y="8" width="10" height="10" stroke="currentColor" stroke-width="2"/><rect x="8" y="22" width="10" height="10" stroke="currentColor" stroke-width="2"/><rect x="22" y="22" width="10" height="10" stroke="currentColor" stroke-width="2"/></svg>
+        </div>
+        <h3>Customer Support AI</h3>
+        <p>Deploy AI agents that handle Tier-1 tickets, escalate intelligently, and resolve issues 24/7 — at a fraction of headcount cost.</p>
+        <ul class="card-features">
+          <li>Instant ticket resolution</li>
+          <li>Smart escalation rules</li>
+          <li>Multi-channel (email, chat, voice)</li>
+          <li>Sentiment-aware responses</li>
+        </ul>
+        <div class="card-metric">
+          <span class="metric-val">82%</span>
+          <span class="metric-label">tickets resolved without human</span>
+        </div>
+      </div>
+
+      <div class="service-card" data-index="03">
+        <div class="card-icon">
+          <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="14" r="6" stroke="currentColor" stroke-width="2"/><path d="M8 34 C8 26 32 26 32 34" stroke="currentColor" stroke-width="2"/></svg>
+        </div>
+        <h3>HR Automation</h3>
+        <p>From job posting to onboarding, AI handles screening, scheduling, document collection, and new-hire orientation flows.</p>
+        <ul class="card-features">
+          <li>Resumé screening & ranking</li>
+          <li>Interview scheduling agents</li>
+          <li>Onboarding workflow automation</li>
+          <li>Policy Q&A chatbots</li>
+        </ul>
+        <div class="card-metric">
+          <span class="metric-val">60%</span>
+          <span class="metric-label">reduction in time-to-hire</span>
+        </div>
+      </div>
+
+      <div class="service-card" data-index="04">
+        <div class="card-icon">
+          <svg viewBox="0 0 40 40" fill="none"><path d="M6 34 L14 20 L20 28 L26 16 L34 34 Z" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+        </div>
+        <h3>Operations & Back-Office</h3>
+        <p>Invoice processing, data entry, reporting, and internal workflows — automated end-to-end with zero error rates.</p>
+        <ul class="card-features">
+          <li>Invoice data extraction</li>
+          <li>Automated reporting pipelines</li>
+          <li>Approval workflow agents</li>
+          <li>Cross-system data sync</li>
+        </ul>
+        <div class="card-metric">
+          <span class="metric-val">99.4%</span>
+          <span class="metric-label">accuracy vs manual entry</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how section" id="how">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">// The Process</span>
+      <h2>From Audit to <span class="accent">Automation</span> in Weeks</h2>
+      <p>No months-long implementations. We ship fast and measure everything.</p>
+    </div>
+    <div class="process-steps">
+      <div class="process-step">
+        <div class="step-num">01</div>
+        <div class="step-content">
+          <h3>Free Workflow Audit</h3>
+          <p>We map exactly where your team spends manual hours — down to the task level. You get a clear picture of your automation ROI before committing a penny.</p>
+          <div class="step-tag">1–2 hours · No commitment</div>
+        </div>
+      </div>
+      <div class="process-connector">
+        <div class="connector-line"></div>
+        <div class="connector-arrow">↓</div>
+      </div>
+      <div class="process-step">
+        <div class="step-num">02</div>
+        <div class="step-content">
+          <h3>Agent Architecture Design</h3>
+          <p>We design the AI agent stack for your specific workflows — which models, which tools, how they integrate with your existing systems (CRM, HRIS, helpdesk, etc.)</p>
+          <div class="step-tag">3–5 days · Full technical blueprint</div>
+        </div>
+      </div>
+      <div class="process-connector">
+        <div class="connector-line"></div>
+        <div class="connector-arrow">↓</div>
+      </div>
+      <div class="process-step">
+        <div class="step-num">03</div>
+        <div class="step-content">
+          <h3>Build & Deploy</h3>
+          <p>Our team builds, tests, and deploys the agents in your environment. We run parallel testing to ensure zero disruption to live operations.</p>
+          <div class="step-tag">2–6 weeks · Full deployment</div>
+        </div>
+      </div>
+      <div class="process-connector">
+        <div class="connector-line"></div>
+        <div class="connector-arrow">↓</div>
+      </div>
+      <div class="process-step">
+        <div class="step-num">04</div>
+        <div class="step-content">
+          <h3>Monitor & Optimize</h3>
+          <p>We don't disappear post-launch. Ongoing monitoring, performance tuning, and expansion to new workflows as your team grows.</p>
+          <div class="step-tag">Ongoing · Monthly reporting</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTORS -->
+<section class="sectors section" id="sectors">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">// Industries We Serve</span>
+      <h2>Built for Teams That <span class="accent">Move Fast</span></h2>
+    </div>
+    <div class="sectors-grid">
+      <div class="sector-card">
+        <div class="sector-icon">⚡</div>
+        <h4>SaaS & Tech</h4>
+        <p>Automate trial-to-paid flows, support queues, and churn-risk outreach.</p>
+      </div>
+      <div class="sector-card">
+        <div class="sector-icon">🏥</div>
+        <h4>Healthcare</h4>
+        <p>Patient intake, appointment scheduling, and insurance pre-auth workflows.</p>
+      </div>
+      <div class="sector-card">
+        <div class="sector-icon">🏦</div>
+        <h4>Financial Services</h4>
+        <p>KYC data collection, document review, and compliance reporting automation.</p>
+      </div>
+      <div class="sector-card">
+        <div class="sector-icon">🛒</div>
+        <h4>E-Commerce</h4>
+        <p>Order management, returns handling, and customer query resolution at scale.</p>
+      </div>
+      <div class="sector-card">
+        <div class="sector-icon">🏗️</div>
+        <h4>Real Estate</h4>
+        <p>Lead nurturing, property inquiry agents, and document collection pipelines.</p>
+      </div>
+      <div class="sector-card">
+        <div class="sector-icon">📦</div>
+        <h4>Logistics</h4>
+        <p>Shipment tracking bots, exception handling, and carrier communication agents.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESULTS -->
+<section class="results section" id="results">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">// Proof Points</span>
+      <h2>Numbers That <span class="accent">Actually Matter</span></h2>
+    </div>
+    <div class="results-grid">
+      <div class="result-card big">
+        <div class="result-before-after">
+          <div class="before">
+            <span class="ba-label">Before</span>
+            <span class="ba-val">23 hrs/week</span>
+            <span class="ba-desc">Sales team on manual CRM updates</span>
+          </div>
+          <div class="ba-arrow">→</div>
+          <div class="after">
+            <span class="ba-label">After</span>
+            <span class="ba-val">2 hrs/week</span>
+            <span class="ba-desc">AI handles the rest automatically</span>
+          </div>
+        </div>
+        <div class="result-tag">SaaS Company · 45-person sales team</div>
+      </div>
+      <div class="result-card big">
+        <div class="result-before-after">
+          <div class="before">
+            <span class="ba-label">Before</span>
+            <span class="ba-val">5-day TTRP</span>
+            <span class="ba-desc">Average ticket resolution time</span>
+          </div>
+          <div class="ba-arrow">→</div>
+          <div class="after">
+            <span class="ba-label">After</span>
+            <span class="ba-val">4 hours</span>
+            <span class="ba-desc">For 82% of all support tickets</span>
+          </div>
+        </div>
+        <div class="result-tag">E-Commerce Brand · 12K monthly tickets</div>
+      </div>
+      <div class="result-card">
+        <div class="result-num">$420K</div>
+        <div class="result-desc">Annual labor cost saved for a 200-person company after full automation deployment</div>
+      </div>
+      <div class="result-card">
+        <div class="result-num">48h</div>
+        <div class="result-desc">Fastest deployment — from signed contract to live agent handling real workflows</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact section" id="contact">
+  <div class="container">
+    <div class="contact-inner">
+      <div class="contact-left">
+        <span class="section-tag">// Let's Talk</span>
+        <h2>Get Your Free<br/><span class="accent">Workflow Audit</span></h2>
+        <p>Tell us about your team. We'll identify your top 3 automation opportunities and estimate your ROI — completely free, no strings attached.</p>
+        <div class="contact-promise">
+          <div class="promise-item">
+            <span class="promise-icon">✓</span>
+            <span>Response within 4 business hours</span>
+          </div>
+          <div class="promise-item">
+            <span class="promise-icon">✓</span>
+            <span>Free 60-minute workflow audit call</span>
+          </div>
+          <div class="promise-item">
+            <span class="promise-icon">✓</span>
+            <span>Written ROI estimate, no commitment</span>
+          </div>
+        </div>
+      </div>
+      <div class="contact-right">
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">First Name *</label>
+              <input type="text" id="fname" name="fname" placeholder="Alex" required/>
+              <span class="form-error" id="fnameErr"></span>
+            </div>
+            <div class="form-group">
+              <label for="lname">Last Name *</label>
+              <input type="text" id="lname" name="lname" placeholder="Chen" required/>
+              <span class="form-error" id="lnameErr"></span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Work Email *</label>
+            <input type="email" id="email" name="email" placeholder="alex@company.com" required/>
+            <span class="form-error" id="emailErr"></span>
+          </div>
+          <div class="form-group">
+            <label for="company">Company *</label>
+            <input type="text" id="company" name="company" placeholder="Acme Corp" required/>
+            <span class="form-error" id="companyErr"></span>
+          </div>
+          <div class="form-group">
+            <label for="team">Team Size *</label>
+            <select id="team" name="team" required>
+              <option value="">Select team size</option>
+              <option value="1-10">1–10 people</option>
+              <option value="11-50">11–50 people</option>
+              <option value="51-200">51–200 people</option>
+              <option value="200+">200+ people</option>
+            </select>
+            <span class="form-error" id="teamErr"></span>
+          </div>
+          <div class="form-group">
+            <label for="dept">Primary Department to Automate *</label>
+            <select id="dept" name="dept" required>
+              <option value="">Select department</option>
+              <option value="sales">Sales</option>
+              <option value="hr">HR / People Ops</option>
+              <option value="support">Customer Support</option>
+              <option value="ops">Operations / Back-Office</option>
+              <option value="other">Other</option>
+            </select>
+            <span class="form-error" id="deptErr"></span>
+          </div>
+          <div class="form-group">
+            <label for="message">What's eating your team's time? (Optional)</label>
+            <textarea id="message" name="message" rows="3" placeholder="e.g. Our reps spend 3 hours a day updating Salesforce after calls..."></textarea>
+          </div>
+          <button type="submit" class="btn-submit" id="submitBtn">
+            <span class="btn-text">Book My Free Audit →</span>
+            <span class="btn-loading" style="display:none">Sending...</span>
+          </button>
+          <div class="form-success" id="formSuccess" style="display:none">
+            <span class="success-icon">✓</span>
+            <strong>You're booked in.</strong> We'll email you within 4 hours to confirm your audit slot.
+          </div>
+          <div class="form-error-msg" id="formErrorMsg" style="display:none">
+            Something went wrong. Please email us directly at <a href="mailto:hello@nexusflow.ai">hello@nexusflow.ai</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#" class="nav-logo">
+          <span class="logo-mark"></span>
+          NexusFlow
+        </a>
+        <p>AI Automation Agency specializing in Operational Efficiency. We replace manual workflows with intelligent AI Agents.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="LinkedIn" class="social-link">in</a>
+          <a href="#" aria-label="Twitter" class="social-link">𝕏</a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h5>Services</h5>
+          <ul>
+            <li><a href="#services">Sales Automation</a></li>
+            <li><a href="#services">Customer Support AI</a></li>
+            <li><a href="#services">HR Automation</a></li>
+            <li><a href="#services">Operations</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="#how">How It Works</a></li>
+            <li><a href="#sectors">Sectors</a></li>
+            <li><a href="#results">Results</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <ul>
+            <li><a href="mailto:hello@nexusflow.ai">hello@nexusflow.ai</a></li>
+            <li><a href="#contact">Book Audit Call</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 NexusFlow. All rights reserved.</p>
+      <div class="footer-legal">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="src/components/canvas.js"></script>
+<script src="src/components/nav.js"></script>
+<script src="src/components/animations.js"></script>
+<script src="src/components/form.js"></script>
+
+</body>
+</html>

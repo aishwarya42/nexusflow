@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>404 — NexusFlow</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;0,500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="src/styles/main.css"/>
+  <style>
+    .error-page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 24px;
+    }
+    .error-code {
+      font-family: var(--font-mono);
+      font-size: 120px;
+      font-weight: 300;
+      color: var(--accent);
+      opacity: 0.3;
+      line-height: 1;
+      margin-bottom: 16px;
+    }
+    .error-page h1 { font-size: 36px; font-weight: 800; color: var(--white); margin-bottom: 16px; }
+    .error-page p { font-size: 16px; color: var(--text-dim); margin-bottom: 40px; max-width: 360px; }
+  </style>
+</head>
+<body>
+<nav class="nav scrolled">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><span class="logo-mark"></span>NexusFlow</a>
+  </div>
+</nav>
+<div class="error-page">
+  <div class="error-code">404</div>
+  <h1>Page Not Found</h1>
+  <p>The page you're looking for doesn't exist or has been moved.</p>
+  <a href="index.html" class="btn-primary">← Back to Home</a>
+</div>
+</body>
+</html>
