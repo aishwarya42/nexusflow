@@ -94,31 +94,6 @@ npm install axios
 
 ---
 
-## ▶️ Running the App
-
-You need **3 terminals** running at the same time:
-
-**Terminal 1 — Ollama (AI model):**
-```bash
-ollama serve
-```
-
-**Terminal 2 — Python backend:**
-```bash
-source venv/bin/activate
-python3 backend.py
-```
-
-**Terminal 3 — React frontend:**
-```bash
-cd frontend
-npm run dev
-```
-
-Then open **http://localhost:5173** in your browser.
-
----
-
 ## 📁 Project Structure
 
 ```
